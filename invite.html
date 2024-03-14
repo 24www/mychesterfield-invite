@@ -12,6 +12,16 @@
 
 	<script type="text/javascript" src="script.js"></script>
 
+	<style>
+		@font-face {
+			font-family: 'Oswald-Light';
+			src: url('fonts/Oswald-Light.ttf') format('truetype');
+			font-weight: 300;
+			font-style: normal;
+			font-display: swap
+		}
+	</style>
+
 	<link type="text/css" rel="stylesheet" href="css/common-default.css">
 	<link type="text/css" rel="stylesheet" href="css/page.css">
 	<link type="text/css" rel="stylesheet" href="css/styles.css">
@@ -82,7 +92,7 @@
 					<div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink">
 						<a href="#" class="dropdown-item">Личный кабинет</a>
 						<a href="#" class="dropdown-item">Мои призы</a>
-						<a href="#" class="dropdown-item">Пригласи друга</a>
+						<a href="#" class="dropdown-item">Пригласить друга</a>
 						<div class="dropdown-divider"></div>
 						<a href="#" class="dropdown-item">Выход</a>
 					</div>
@@ -103,7 +113,7 @@
 							<a href="#" class="nav-link mobile-profile-link" id="navbarDropdownMenuLink">Иван</a>
 							<a href="#" class="item">Личный кабинет</a>
 							<a href="#" class="item">Мои призы</a>
-							<a href="#" class="item">Пригласи друга</a>
+							<a href="#" class="item">Пригласить друга</a>
 							<a href="#" class="item item-logout">Выход</a>
 						</div>
 					</div>
@@ -144,7 +154,7 @@
 							<a class="bpPersonalFooterMenu__text prizes" href="#">Мои призы</a>
 						</li>
 						<li class="bpPersonalFooterMenu__item">
-							<a class="bpPersonalFooterMenu__text invite active" href="#">Пригласи друга</a>
+							<a class="bpPersonalFooterMenu__text invite active" href="#">Пригласить друга</a>
 						</li>
 					</ul>
 				</div>
@@ -188,7 +198,7 @@
 													<a class="prizes" href="#">Мои призы</a>
 												</li>											
 												<li class="">
-													<a class="invite ms-active" href="#">Пригласи друга</a>
+													<a class="invite ms-active" href="#">Пригласить друга</a>
 												</li>
 											</ul>
 										</div>
@@ -219,9 +229,9 @@
                 <div class="invite-page">
                     <div class="invite-wrapper">
                         <div class="invite-header">
-                            <div class="invite-title">Приглашай друзей*</div>
-                            <div class="invite-subtitle">и вместе выигрывайте по 100&nbsp;рублей на&nbsp;мобильный**</div>
-                            <div class="invite-text">Зови друзей* на сайт: здесь их ждёт больше информации о наших продуктах, новые разделы и интересные факты о бренде. При регистрации ты и твой друг* получите по 100 рублей на мобильный!</div>
+                            <div class="invite-title">Пригласить друзей*</div>
+                            <div class="invite-subtitle">и вместе получить по 100&nbsp;₽ на&nbsp;мобильный**</div>
+                            <div class="invite-text">У тебя есть возможность пригласить друзей* на&nbsp;сайт, чтобы узнать больше о&nbsp;бренде, лимитированных предложениях и&nbsp;разделах. При регистрации друга* и ты, и друг сможете получить по&nbsp;100 рублей** на&nbsp;мобильный телефон!</div>
                         </div>
 
                         <div class="invite-steps">
@@ -229,7 +239,7 @@
                                 <div class="invite-step-icon">
                                     <img src="img/invite/mail.svg">
                                 </div>
-                                <div class="invite-step-title">Отправь другу*<br> приглашение</div>
+                                <div class="invite-step-title">Отправить*<br> другу<br> приглашение</div>
                             </div>
                             <div class="invite-step-arrow invite-step-arrow-first">
                                 <svg width="37" height="74" viewBox="0 0 37 74" fill="none">
@@ -240,7 +250,7 @@
                                 <div class="invite-step-icon">
                                     <img src="img/invite/age.svg">
                                 </div>
-                                <div class="invite-step-title">Подожди, пока друг*<br> зарегистрируется<br> и подтвердит возраст***</div>
+                                <div class="invite-step-title">Регистрация друга*<br> и&nbsp;подтверждение<br> возраста***</div>
                             </div>
                             <div class="invite-step-arrow invite-step-arrow-last">
                                 <svg width="37" height="74" viewBox="0 0 37 74" fill="none">
@@ -251,7 +261,7 @@
                                 <div class="invite-step-icon">
                                     <img src="img/invite/price.svg">
                                 </div>
-                                <div class="invite-step-title">Оформи 100&nbsp;рублей<br> на мобильный**<br> в личном кабинете</div>
+                                <div class="invite-step-title">Получить 100&nbsp;₽<br> на&nbsp;мобильный**<br> в&nbsp;личном кабинете</div>
                             </div>
                         </div>
 
@@ -260,7 +270,7 @@
                                 <div class="invite-block-title">Приглашение</div>
                                 <div class="invite-block-text">
                                     <div class="invite-block-context">
-                                        <div class="invite-block-context-copy">Привет!<br> Присоединяйся к платформе mychesterfield.ru — нужно всего три шага! Переходишь по ссылке, регистрируешься, подтверждаешь возраст и всё, 100 рублей на мобильный телефон твои! 18+</div>
+                                        <div class="invite-block-context-copy">Привет!<br> Ты можешь присоединиться к&nbsp;платформе всего за три шага! Нужно только перейти по&nbsp;ссылке, пройти регистрацию, подтвердить возраст, и 100&nbsp;рублей на&nbsp;счете мобильного твои!</div>
                                         <a id="invite-link" href="#">https://mychesterfield.ru/invite-friend/c/C</a>
                                     </div>
                                     <div class="invite-block-copy">
@@ -298,44 +308,25 @@
                         </div>
                             <div id="inviteList" class="invite-table">
 								<div class="invite-table-title">Твои приглашения</div>
-									<table>
-										<tbody>
-											<tr>
-												<th>Имя</th>
-												<th>Возраст</th>
-												<th>Дата регистрации</th>
-											</tr>
-											<tr>
-												<td>ИмяУдалено ФамилияУдалена</td>
-												<td>Подтвержден</td>
-												<td>05.03.2024</td>
-											</tr>
-											<tr>
-												<td>ИмяУдалено ФамилияУдалена</td>
-												<td>Подтвержден</td>
-												<td>06.03.2024</td>
-											</tr>
-											<tr>
-												<td>ИмяУдалено ФамилияУдалена</td>
-												<td>Подтвержден</td>
-												<td>06.03.2024</td>
-											</tr>
-											<tr>
-												<td>ИмяУдалено ФамилияУдалена</td>
-												<td>Не подтвержден</td>
-												<td>06.03.2024</td>
-											</tr>
-										</tbody>
-									</table>
-									<div class="invite-table-button">
+								<div class="invite-block-container">
+									<div class="invite-block-wrapper">
+										<div class="invite-block-left">
+											<div class="invite-block-left-title">Отправлено приглашений</div>
+											<div class="invite-block-left-value">015</div>
+										</div>
+										<div class="invite-block-right">
+											<div class="invite-block-right-title">Возраст подтвержден</div>
+											<div class="invite-block-right-value">003</div>
+										</div>
 									</div>
+								</div>							
 							</div>
 
                         <div class="invite-rules">
-                            <p>*Друг — совершеннолетний курильщик, постоянно проживающий на территории РФ.</p>
-                            <p>**Приз — 100 рублей на счет мобильного телефона. Количество приглашений не ограничено. Максимальное количество призов одному совершеннолетнему курильщику за приглашения друзей — 5шт. Ты можешь пригласить только гражданина РФ, старше 18 лет, потребителя табака.</p>
-                            <p>*** Для подтверждения возраста необходимо предоставить фото- или скан-копии страниц документа, удостоверяющего личность. Подтвердить возраст теперь гораздо проще — достаточно одного селфи на странице регистрации, и система автоматически его распознает.</p>
-                            <p>Подробнее с условиями активности можно ознакомиться в <a href="https://www.mychesterfield.ru/info/rules/">правилах сайта</a>.</p>
+                            <p>*Друг — совершеннолетний курильщик, гражданин РФ.</p>
+							<p>**Количество приглашений не ограничено. Максимальное количество призов одному совершеннолетнему курильщику за приглашения друзей — 5шт. Ты можешь пригласить только гражданина РФ, старше 18 лет, потребителя табака.</p>
+							<p>***Подтверждение возраста и первичная регистрация в базу данных совершеннолетних курильщиков ООО «ФМСМ»</p>
+							<p>Подробнее с условиями активности можно ознакомиться в <a href="https://www.mychesterfield.ru/info/rules/">правилах сайта</a>.</p>
                         </div>
                     </div>
                 </div>

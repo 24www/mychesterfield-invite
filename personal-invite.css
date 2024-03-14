@@ -47,9 +47,8 @@
 }
 
 .invite-title {
-    font-family: "Oswald-Regular", sans-serif;
+    font-family: 'Oswald-Bold', sans-serif;
     font-style: normal;
-    font-weight: 700;
     font-size: 70px;
     line-height: 125%;
     margin-bottom: 24px;
@@ -350,7 +349,7 @@
     background-color: #fff;
 }
 
-.invite-table-tr-hide{
+.invite-table-tr-hide {
     display: none;
 }
 
@@ -394,6 +393,97 @@
     opacity: 0.8;
 }
 
+.invite-block-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 240px;
+}
+
+.invite-block-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 488px;
+    border: 1px solid #F7670F;
+    background-color: #fff;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+    box-shadow: 0px 29px 35px 0px #CD0A0A40;
+}
+
+.invite-block-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex: none;
+}
+
+.invite-block-left-title {
+    display: inline-flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 38px;
+    font-family: 'Oswald-Regular', sans-serif;
+    font-size: 15px;
+    padding: 0 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #F7670F;
+    border-bottom: 1px solid #FA6E0C;
+}
+
+.invite-block-left-value {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 120px;
+    font-size: 80px;
+    white-space: nowrap;
+    color: #F7670F;
+    font-family: "Oswald-Light", sans-serif;
+    font-weight: 300;
+}
+
+.invite-block-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex: none;
+}
+
+.invite-block-right-title {
+    display: inline-flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 38px;
+    font-family: 'Oswald-Regular', sans-serif;
+    font-size: 15px;
+    padding: 0 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #FF8134;
+    color: #fff;
+    border-bottom: 1px solid #FA6E0C;
+}
+
+.invite-block-right-value {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 120px;
+    font-size: 80px;
+    white-space: nowrap;
+    background-color: #F7670F;
+    color: #fff;
+    font-family: "Oswald-Light", sans-serif;
+    font-weight: 300;
+}
+
 .invite-rules {
     margin-top: 64px;
     font-family: 'Raleway-Regular';
@@ -421,6 +511,13 @@
 
 .invite-rules a {
     color: #B2B1AC;
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .invite-block-container {
+        margin-bottom: 100px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -521,6 +618,20 @@
     .invite-table table {
         box-shadow: none;
     }
+
+    .invite-block-container {
+        margin-bottom: 140px;
+    }
+
+    .invite-block-left-value {
+        height: 110px;
+        font-size: 70px;
+    }
+
+    .invite-block-right-value {
+        height: 110px;
+        font-size: 70px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -534,6 +645,7 @@
         margin-top: 0;
         font-size: 16px;
         width: 100%;
+        text-align: left;
     }
 
     .invite-step-icon {
@@ -545,7 +657,7 @@
         gap: 16px;
     }
 
-    .invite-block-text{
+    .invite-block-text {
         padding: 24px 40px 24px 16px;
     }
 
@@ -573,17 +685,39 @@
         padding-right: 16px;
     }
 
-    .invite-rules:before{
+    .invite-block-container {
+        margin-bottom: 70px;
+    }
+
+    .invite-block-left-title {
+        font-size: 13px;
+    }
+
+    .invite-block-right-title {
+        font-size: 13px;
+    }
+
+    .invite-block-left-value {
+        height: 100px;
+        font-size: 64px;
+    }
+
+    .invite-block-right-value {
+        height: 100px;
+        font-size: 64px;
+    }
+
+    .invite-rules:before {
         height: 1000px;
     }
 
-    .invite-rules{
+    .invite-rules {
         margin-top: 32px;
     }
 }
 
-.invite-block-buttons{
-    .invite-social{
+.invite-block-buttons {
+    .invite-social {
         display: flex;
         align-items: center;
         flex-direction: row;
