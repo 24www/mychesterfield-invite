@@ -1,0 +1,6 @@
+.pmru_wcmn_cookieConsent {font-family: Arial;}
+.pmru_wcmn_cookieConsentBtnOk { background-color: white; }
+.pmru_wcmn_cookieConsentBtnOk:hover {background-color: lightgreen; opacity;}
+.pmru_wcmn_cookieConsentText { scrollbar-width: thin; }
+.pmru_wcmn_cookieConsentText::-webkit-scrollbar { width: 5px; height: 8px; background-color: grey; }
+.pmru_wcmn_cookieConsentText::-webkit-scrollbar-thumb {background-color: white; }
